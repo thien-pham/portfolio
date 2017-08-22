@@ -1,0 +1,334 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Droid Sans', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1.5;
+  color: #555;
+  background-color: #FBFBFB;
+}
+
+header {
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 120px;
+}
+
+ul {
+  list-style: none;
+}
+
+.highlight a {
+    color: #eee;
+    margin-right: 15px;
+    transition: .5s ease;
+}
+
+.highlight a:hover {
+    color: #26A69A;
+    transition: .5s ease;
+}
+
+.main-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9998;
+  width: 100%;
+  height: 80px;
+  font-size: 18px;
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #26A69A;
+}
+
+.main-nav-link > span {
+    margin-right:auto;
+}
+
+.main-nav-link > a {
+  text-transform: uppercase;
+  padding: 14px 18px;
+  display: block;
+  opacity:0.5;
+  transition: .5s ease;
+}
+
+.main-nav-link > a:hover
+{
+  box-shadow: inset 0 0 0 2px black;
+  transition: .5s ease;
+  opacity:1;
+}
+
+.name-container {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.name-container img {
+  border-radius: 50%;
+  filter: grayscale(100%);
+}
+
+.project-stack {
+  padding-top: 20px;
+}
+
+.project-stack li {
+  padding-right: 3px;
+}
+
+.right img {
+  padding-top: 20px;
+}
+.project-stack li:last-child {
+  padding-left: 1px;
+}
+
+.mongo {
+  filter: grayscale(100%);
+  filter: opacity(70%);
+}
+
+img.twilio {
+  filter: opacity(80%);
+}
+
+a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+}
+
+.about {
+  margin: 0 auto;
+  margin-top: 190px;
+  max-width: 50em;
+}
+
+.greeting span {
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 400;
+  font-size: 70px;
+}
+
+h2, .greeting {
+  font-size: 32px;
+}
+
+.greeting a {
+  font-style: italic;
+}
+
+.subintro {
+  font-size: 20px;
+  margin-bottom: 200px;
+}
+
+.subtitle {
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 400;
+  font-size: 40px;
+
+}
+
+.project-heading {
+  padding-top: 50px;
+}
+.project-description {
+  font-weight: 300;
+  font-size: 16px;
+  text-align: left;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+.work {
+  margin: 0 auto;
+  max-width: 100%;
+  text-align: center;
+  background-color: #ECEFF1;
+  padding-bottom: 40px;
+}
+
+.left {
+  align-items: center;
+  justify-content: center;
+}
+
+.project-stack li, .project-links li {
+  display: inline;
+}
+
+.project-links {
+  margin-top: 40px;
+}
+
+button {
+  margin-left: auto;
+  border: none;
+  background: #333;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+}
+
+.box {
+	width: 50%;
+  display: inline;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+}
+
+.btn {
+	line-height: 35px;
+	height: 35px;
+	text-align: center;
+	width: 110px;
+	cursor: pointer;
+  display: inline;
+  padding: 8px 12px;
+  margin-right: 10px;
+}
+
+.btn-one {
+	color: #333;
+	transition: all 0.3s;
+	position: relative;
+}
+
+.btn-one span {
+	transition: all 0.3s;
+  color:#26A69A;
+  margin-left: 5px;
+  font-weight:bolder;
+}
+
+.btn-one::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: black;
+	border-bottom-color: black;
+	transform: scale(0.1, 1);
+}
+
+.aspan:hover span {
+	letter-spacing: 2px;
+}
+
+.btn-one:hover::before {
+	opacity: 1;
+	transform: scale(1, 1);
+}
+
+.btn-one::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.3s;
+	background-color: #333;
+}
+
+.btn-one:hover::after {
+	opacity: 0;
+	transform: scale(0.1, 1);
+}
+
+.aspan {
+  z-index: 1000;
+}
+
+.footer-section {
+  background-color: #B2DFDB;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-size: cover;
+}
+
+.contact h1 {
+  padding-top: 20px;
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+}
+
+.highlight {
+  margin-right: 10px;
+  padding-right: 10px;
+}
+
+h5 {
+  display: block;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 5px;
+}
+
+@media (min-width: 576px) {
+  .project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+
+  .project > div {
+    flex: 1;
+  }
+
+  /*.project .project-links {
+    order: 4;
+  }
+
+  .project .project-image {
+    order: 5;
+  }*/
+}
+
+/*@media (min-width: 576px) and (max-width: 768px) {
+    .project-links {
+        margin-bottom: 3px;
+        margin-top: 3px;
+        padding-bottom: 3px;
+        padding-top: 3px;
+    }
+}*/
