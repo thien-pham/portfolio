@@ -312,10 +312,28 @@ h5 {
   padding-bottom: 5px;
 }
 
+@media all and (max-width: 576px) {
+  .headshot {
+    width: 60px;
+  }
+
+  .greeting span {
+    font-size: 60px;
+  }
+
+  h2, .greeting {
+    font-size: 22px;
+  }
+  .project-image {
+    max-width: 100%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .about {
     margin-right: 10px;
     margin-left: 10px;
+    margin-top: 150px;
   }
 
   .headshot {
@@ -327,12 +345,12 @@ h5 {
     margin-bottom: -5px;
   }
 
-  .project {
+  .left {
     margin-right: 20px;
   }
 
   .project-image {
-    width: 400px;
+    max-width: 100%;
   }
 }
 
@@ -340,7 +358,6 @@ h5 {
   .about {
     padding-right: 10px;
     padding-left: 10px;
-
   }
 
   .project {
