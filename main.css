@@ -21,14 +21,14 @@ ul {
 }
 
 .highlight a {
-    color: #eee;
-    margin-right: 15px;
-    transition: .5s ease;
+  color: #eee;
+  margin-right: 15px;
+  transition: .5s ease;
 }
 
 .highlight a:hover {
-    color: #26A69A;
-    transition: .5s ease;
+  color: #26A69A;
+  transition: .5s ease;
 }
 
 .main-nav {
@@ -62,8 +62,7 @@ ul {
   transition: .5s ease;
 }
 
-.main-nav-link > a:hover
-{
+.main-nav-link > a:hover {
   box-shadow: inset 0 0 0 2px black;
   transition: .5s ease;
   opacity:1;
@@ -314,14 +313,13 @@ h5 {
 
 @media all and (max-width: 576px) {
   .headshot {
-    width: 60px;
-    /*margin-right: 25px;*/
+    width: 55px;
   }
 
   .name-container {
-    padding-right: 25px;
+    margin-left: 0;
+    /*margin-right: 20px;*/
   }
-
   .greeting span {
     font-size: 60px;
   }
