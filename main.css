@@ -315,6 +315,7 @@ h5 {
 @media all and (max-width: 576px) {
   .headshot {
     width: 60px;
+    padding-right: 10px;
   }
 
   .greeting span {
@@ -324,6 +325,11 @@ h5 {
   h2, .greeting {
     font-size: 22px;
   }
+
+  .subintro {
+    font-size: 18px;
+  }
+
   .project-image {
     max-width: 100%;
   }
