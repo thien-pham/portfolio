@@ -315,7 +315,11 @@ h5 {
 @media all and (max-width: 576px) {
   .headshot {
     width: 60px;
-    margin-right: 25px;
+    /*margin-right: 25px;*/
+  }
+
+  .name-container {
+    padding-right: 25px;
   }
 
   .greeting span {
