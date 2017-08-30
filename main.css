@@ -315,7 +315,7 @@ h5 {
 @media all and (max-width: 576px) {
   .headshot {
     width: 60px;
-    padding-right: 20px;
+    margin-right: 25px;
   }
 
   .greeting span {
