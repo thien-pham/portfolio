@@ -69,6 +69,10 @@ ul {
   opacity:1;
 }
 
+.headshot {
+  width: 80px;
+}
+
 .name-container {
   position: fixed;
   top: 0;
@@ -93,6 +97,7 @@ ul {
 .right img {
   padding-top: 20px;
 }
+
 .project-stack li:last-child {
   padding-left: 1px;
 }
@@ -172,6 +177,9 @@ h2, .greeting {
   justify-content: center;
 }
 
+.project-image {
+  width: 420px;
+}
 .project-stack li, .project-links li {
   display: inline;
 }
@@ -304,24 +312,52 @@ h5 {
   padding-bottom: 5px;
 }
 
-@media (min-width: 576px) {
+@media only screen and (max-width: 768px) {
+  .about {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .headshot {
+    width: 70px;
+  }
+
+  .work {
+    padding-bottom: 0;
+    margin-bottom: -5px;
+  }
+
+  .project {
+    margin-right: 20px;
+  }
+
+  .project-image {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    padding-right: 10px;
+    padding-left: 10px;
+
+  }
+
   .project {
     display: flex;
     align-items: center;
     margin-bottom: 100px;
   }
-
+  .left {
+    margin-right: 5px;
+  }
   .project > div {
     flex: 1;
   }
 
-  /*.project .project-links {
-    order: 4;
+  .headshot {
+    width: 80px;
   }
-
-  .project .project-image {
-    order: 5;
-  }*/
 }
 
 /*@media (min-width: 576px) and (max-width: 768px) {
