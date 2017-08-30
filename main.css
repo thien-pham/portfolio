@@ -311,15 +311,21 @@ h5 {
   padding-bottom: 5px;
 }
 
+@media all and (max-width: 399px) {
+  .headshot {
+    display: none;
+  }
+}
+
 @media all and (max-width: 576px) {
   .headshot {
-    width: 55px;
+    width: 70px;
   }
 
   .name-container {
-    margin-left: 0;
-    /*margin-right: 20px;*/
+    margin-left: 5px;
   }
+
   .greeting span {
     font-size: 60px;
   }
@@ -344,9 +350,9 @@ h5 {
     margin-top: 130px;
   }
 
-  .headshot {
+  /*.headshot {
     width: 70px;
-  }
+  }*/
 
   .work {
     padding-bottom: 0;
