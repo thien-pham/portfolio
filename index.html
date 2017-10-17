@@ -16,14 +16,21 @@
             <img class="headshot" src="images/headshot.png"
                 alt="Thien Pham headshot">
           </div>
-            <nav class="main-nav">
-                <ul>
-                    <li class="main-nav-link"><a href="#">About</a></li>
-                    <li class="main-nav-link"><a href="#work">Portfolio</a></li>
-                    <li class="main-nav-link"><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+          <nav class="main-nav" id="mynav">
+            <div class="hamburger">
+              <div class="hamburger-stripe"></div>
+              <div class="hamburger-stripe"></div>
+              <div class="hamburger-stripe"></div>
+            </div>
+            <div class="splash-nav-desktop-grid splash-nav-desktop-grid-closed">
+              <ul class="splash-nav-primary">
+                  <li class="main-nav-link"><a href="#">About</a></li>
+                  <li class="main-nav-link"><a href="#work">Portfolio</a></li>
+                  <li class="main-nav-link"><a href="#contact">Contact</a></li>
 
+              </ul>
+            </div>
+            </nav>
         </header>
 
           <div class="about" id="about">
@@ -102,8 +109,8 @@
                     <ul>
                       <li class="project-link project-link-live">
                         <div class="box">
-                        <div class="btn btn-one" type="submit">
-                          <a class="aspan" href="https://mighty-depths-52749.herokuapp.com/"><span>Demo</span></a>
+                        <div class="btn btn-one btn-rev" type="submit">
+                          <a class="aspan revision"><span>Demo</span></a>
                         </div></div>
                       </li>
                       <li class="project-link project-link-github">
@@ -220,5 +227,18 @@
               <br>
         </div>
       </footer>
+      <script src="jquery-3.2.1.min.js"></script>
+      <script>
+        $("button").on("click", function() {
+            var el = $(this);
+            if (el.text() == el.data("Under revision")) {
+              el.text(el.data("Demo"));
+            } else {
+              el.data("Demo", el.text());
+              el.text(el.data("Under revision"));
+            }
+        });
+
+      </script>
     </body>
 </html>

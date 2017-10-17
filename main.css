@@ -20,6 +20,11 @@ ul {
   list-style: none;
 }
 
+.splash-nav-desktop-grid {
+  max-width: 1200px;
+  margin: auto;
+}
+
 .highlight a {
   color: #eee;
   margin-right: 15px;
@@ -40,6 +45,24 @@ ul {
   height: 80px;
   font-size: 18px;
 }
+
+/*.hamburger {
+  width: 48px;
+  height: 42px;
+  border: 1px solid #eeeeef;
+  border-radius: 2px;
+  box-shadow: 0 0 2px #eeeeef;
+  padding: 10px 10px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.hamburger-stripe {
+  background-color: #6799ff;
+  height: 3px;
+  margin-bottom: 5px;
+}*/
 
 .main-nav ul {
   list-style: none;
@@ -149,12 +172,12 @@ h2, .greeting {
   font-family: 'Abril Fatface', cursive;
   font-weight: 400;
   font-size: 40px;
-
 }
 
 .project-heading {
   padding-top: 50px;
 }
+
 .project-description {
   font-weight: 300;
   font-size: 16px;
@@ -278,6 +301,18 @@ button {
   z-index: 1000;
 }
 
+.btn-rev:hover a.revision span{
+  display: none;
+}
+
+.btn-rev:hover a.revision:after {
+  cursor: not-allowed;
+  content: '[Under revision]';
+  color:#26A69A;
+  font-weight: bolder;
+  transition: all 0.3s;
+}
+
 .footer-section {
   background-color: #B2DFDB;
   padding-top: 5%;
@@ -317,7 +352,14 @@ h5 {
   }
 }
 
+@media (min-width: 576px) {
+  .hamburger {
+    display: none;
+  }
+
+}
 @media all and (max-width: 576px) {
+
   .headshot {
     width: 70px;
   }
@@ -344,6 +386,7 @@ h5 {
 }
 
 @media only screen and (max-width: 768px) {
+
   .about {
     margin-right: 10px;
     margin-left: 10px;
@@ -368,7 +411,10 @@ h5 {
   }
 }
 
+
 @media screen and (min-width: 768px) {
+
+
   .about {
     padding-right: 10px;
     padding-left: 10px;
